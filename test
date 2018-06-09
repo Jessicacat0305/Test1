@@ -86,8 +86,8 @@ def lineBot(op):
                     cl.sendMessage(to,'指令反應\n' + format(str(elapsed_time)) + '秒')
                 elif text.lower() == 'set':
                     ret = "╔══[ 設定 ]"
-                    if settings["reread"] == True: ret += "\n╠ 查詢收回開啟 ✅"
-                    else: ret += "\n╠ 查詢收回關閉 ❌"
+                    if settings["reread"] == True: ret += "\n╠ 查詢收回開啟"
+                    else: ret += "\n╠ 查詢收回關閉"
                     ret += "\n╚══[ 設定 ]"
                     cl.sendMessage(to, str(ret))
                 elif text.lower() == 'reread on':
